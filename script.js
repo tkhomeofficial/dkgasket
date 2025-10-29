@@ -230,14 +230,3 @@ if (mobileMenu) {
     }
   });
 }
-
-// Visitor counter using CountAPI
-fetch("https://api.countapi.xyz/hit/dkgasket/visits")
-  .then((response) => response.json())
-  .then((data) => {
-    document.getElementById("visitor-count").textContent = data.value;
-  })
-  .catch((error) => {
-    console.error("Visitor counter error:", error);
-    document.getElementById("visitor-count").textContent = "N/A";
-  });
