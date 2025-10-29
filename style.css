@@ -1,0 +1,61 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.hero-bg {
+  background-color: #1b1b1b;
+  background-image: url(hero-bg.png);
+  background-size: contain;
+}
+
+.dkg-orange-light {
+  background-color: #ff6600;
+}
+
+.dkg-orange-dark {
+  background-color: #e65c00;
+}
+
+.text-dkg-red {
+  color: #ff6600;
+}
+
+.border-dkg-red {
+  border-color: #ff6600;
+}
+
+.whatsapp {
+  background-color: #075e54 !important;
+}
+
+#product-list-container {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/* Gallery */
+.gallery-img {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth Mobile Menu Animation */
+#mobile-menu {
+  transform-origin: top;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+#mobile-menu.open {
+  max-height: 400px;
+  opacity: 1;
+}
