@@ -230,16 +230,3 @@ if (mobileMenu) {
     }
   });
 }
-
-// Create or update a counter under a unique namespace
-const counterUrl = "https://api.countapi.xyz/update/dkgasket/visits/?amount=1";
-
-fetch(counterUrl)
-  .then((res) => res.json())
-  .then((res) => {
-    document.getElementById("visitor-count").textContent = res.value;
-  })
-  .catch((err) => {
-    console.error("Visitor counter error:", err);
-    document.getElementById("visitor-count").textContent = "N/A";
-  });
