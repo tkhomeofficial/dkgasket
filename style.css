@@ -90,26 +90,26 @@ body {
   }
 }
 
-/* Top Jai Mata Di Styling (slightly smaller & elegant) */
+/* Top Jai Mata Di (red + minimal spacing) */
 .jai-mata-di-top {
   font-family: 'Baloo 2', cursive;
-  font-size: 2.3rem;
-  color: #ffd700;
-  text-shadow: 0 0 6px rgba(255, 215, 0, 0.8), 0 0 14px rgba(255, 120, 0, 0.6);
+  font-size: 2.5rem;
+  color: #ff0000; /* Pure red */
+  text-shadow: 0 0 6px rgba(255, 0, 0, 0.6), 0 0 12px rgba(255, 50, 50, 0.4);
   animation: jaiTopGlow 2s infinite ease-in-out, jaiFloat 3s infinite ease-in-out;
 }
 
+/* Soft glow animation */
 @keyframes jaiTopGlow {
   0%, 100% {
-    text-shadow: 0 0 6px #ffd700, 0 0 14px #ff9900;
+    text-shadow: 0 0 6px #ff0000, 0 0 12px #b30000;
   }
   50% {
-    text-shadow: 0 0 12px #ffee99, 0 0 20px #ff6600;
+    text-shadow: 0 0 12px #ff4d4d, 0 0 20px #ff0000;
   }
 }
 
-/* Reuse floating effect */
 @keyframes jaiFloat {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+  50% { transform: translateY(-4px); }
 }
