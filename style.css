@@ -6,6 +6,8 @@ body {
   background-color: #1b1b1b;
   background-image: url(hero-bg.png);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .dkg-orange-light {
@@ -60,11 +62,12 @@ body {
   opacity: 1;
 }
 
-/* Owner Section */
+/* Owner / Team photos */
 .owner-photo {
   width: 300px;
   height: 300px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -77,4 +80,12 @@ body {
 .owner-photo:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Subtle responsive adjustments for the three sections */
+@media (max-width: 767px) {
+  .owner-photo {
+    width: 240px;
+    height: 240px;
+  }
 }
